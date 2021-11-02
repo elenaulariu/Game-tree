@@ -1,0 +1,27 @@
+	Cea de-a doua tema la structuri de date s-a bazat pe implementarea unui
+arbore de joc.
+	Am rezolvat primele doua cerinte impreuna, avand in structura de date
+de tip arbore o variabila end, pe care la prima cerinta am folosit-o pentru a
+determina daca un joc s-a sfarsit sau nu. 
+	Pentru fiecare nod am parcurs fiecare casuta a tablei de joc, iar acolo
+unde nu era nici-o valoare(-) am introdus X sau O in fuctie de jucatorul care
+era la rand.
+	Pentru cea de-a doua cerinta am urmat aceiasi pasi ca si la prima
+cerinta, continuand insa prin crearea arborelui si/sau. Am folosit variabila
+end pentru a retine daca nodul este TRUE sau FALSE. 
+	Pentru a crea arborele, dar si pentru al afisa, acesta a fost parcurs
+in adancime.
+	Pentru cea de-a treia cerinta am creat o noua structura de tip arbore,
+asemanatoare cu cea anterioara careia i-am adaugat o variabila visited, care
+ne va ajuta in creearea arborelui, pe care il vom parcurge pe latime, si o 
+variabila nrchildren care retine numarul de copii ai fiecarui nod.
+	Pentru a construi arborele, citim numarul de fii ai nodurilor interne
+si valoarea frunzelor, iar pentru a parcurge nodurile pe latime, le introducem
+intr-o coada. Ca sa stabilim valorile nodurilor interne am construit o functie 
+recursiva care introducea cea mai mica valoare a fiilor pentru nodurile de pe 
+niveluri impare, si cea mai mare valoare pentru cele de pe nivelurile pare.
+	In fisierul main se initializeaza arbori si se apeleaza functiile 
+definite, in celelate doua fisiere sursa (tree pentru cerintele 1 si 2 si 
+minimax pentru cea de-a treia).
+	La finalul fiecareia dintre cele trei cerinte se goleste memoria si se
+inchid fisierele.
